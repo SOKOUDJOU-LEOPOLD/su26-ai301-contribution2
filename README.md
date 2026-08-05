@@ -1,17 +1,19 @@
 # su26-ai301-contribution2
 
-# Contribution [#]: [Issue Title]
+# Contribution [2]: Add X/Y/Z Text Labels to Coordinate Axes for Colorblindness Accessibility
 
-**Contribution Number:** [1 / 2 / 3]  
-**Student:** [Your Name]  
-**Issue:** [GitHub issue link]  
-**Status:** [Phase I / Phase II / Phase III / Phase IV] [In Progress / Complete]
+**Contribution Number:** 2  
+**Student:** Leopold Sokoudjou Gatsing  
+**Issue:** https://github.com/OpenChemistry/avogadrolibs/issues/1667  
+**Status:** Phase I Complete
 
 ---
 
 ## Why I Chose This Issue
 
-[1-2 paragraphs explaining why this issue interests you, how it matches your skills/learning goals, what you hope to learn]
+I chose this issue because it has exactly the right scope for a meaningful first contribution: the entire axes feature lives in a single plugin file (`overlayaxes.cpp`), and the text rendering infrastructure I need — `TextLabel3D`, `TextProperties`, `TextLabelBase` — already exists in the codebase. Rather than building a feature from scratch or navigating a massive unfamiliar system, I can focus on learning how to extend an existing rendering pipeline with a clearly defined, self-contained change. The issue is also well-specified: add "x", "y", "z" labels at the tips of the colored coordinate arrows, in matching colors. There is no ambiguity about what success looks like, and there are no competing pull requests, so my work will not be preempted.
+
+Beyond the technical scope, I was drawn to the accessibility motivation. The current axes rely entirely on color (red, green, blue) to distinguish X, Y, and Z, a design that fails entirely for colorblind users. This is a real usability gap in a scientific tool used by chemists, materials scientists, and researchers. Contributing a fix means improving the experience for a concrete group of people who depend on the software. It also gives me hands-on experience with C++, Qt6, CMake, and OpenGL rendering concepts specifically render passes, overlay viewports, and the visitor pattern which are skills I want to develop in a real-world codebase rather than a tutorial project.
 
 ---
 
